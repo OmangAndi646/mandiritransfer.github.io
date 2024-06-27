@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Poppins', sans-serif;
+}
+    
+
+body {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: rgba(64, 224, 208, 0.4); /* Warna latar belakang dengan opacity 40% */
+    background-size: cover; /* Ukuran gambar latar belakang akan menutupi seluruh area body */
+    background-position: center; /* Posisi gambar latar belakang di tengah-tengah */
+    background-repeat: no-repeat; /* Menghindari pengulangan gambar */
+}
+
+
+/* Kontainer video */
+.video-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+}
+
+/* Video sebagai latar belakang */
+#bgVideo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.4;
+}
+
+i {
+    font-size: x-large;
+    color: #cd1919;
+    border: 10px ;
+    outline: 3px #FFF;
+    border-radius: 100%;
+}
+
+.pop-in.show {
+    opacity: 1;
+    transform: scale(1);
+    transition-delay: 10s; /* Delay 10 detik */
+}
+.wrapper {
+    text-align: center;
+    padding: 15px;
+}
+.wrapper {
+    display: flex;
+    position: static;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+.wrapper {
+    position: relative;
+    width: 600px;
+    height: 400px;
+    background: linear-gradient(135deg, #5ffff7, #4777d9, #b5e1dd, #40E0D0); /* Gradien dari oranye ke kuning */
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Bayangan kotak untuk efek 3D */
+    transform: scale(20.5);
+    transition: all 20.5s ease;
+    opacity: 1;
+    transform: scale(1);
+}
+
+.highlighted-text {
+    font-size: 1em; /* Ukuran font yang lebih besar */
+    font-weight: bold; /* Menebalkan teks */
+    color: #0c4951; /* Warna maroon */
+    outline-width: #146058;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.323); /* Bayangan teks untuk efek timbul */
+    margin: 10px 0;
+    padding: 10px;
+    border: 2px solid #0e9da5; /* Border warna maroon */
+    border-radius: 10px; /* Border melengkung */
+    background: #fff; /* Warna latar belakang putih */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Bayangan kotak untuk efek 3D */
+}
+
+h2 {
+font-size: 3mm;
+color: #960d0d;
+margin: 15px 0;  
+justify-content: center; 
+}
+
+.btn-group {
+    width: 100px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+button {
+    position: absolute;
+    width: 150px;
+    height: inherit;
+    font-size: 1.2em;
+    font-weight: 600;
+    border-radius: 30px;
+    border: 2px solid #40E0D0;
+    outline: none;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .3);
+}
+
+button:nth-child(1) {
+    margin-left: 200px;
+    background: #40E0D0;
+}
+button:nth-child(2) {
+    margin-left: -200px;
+    color: #40E0D0;
+}
